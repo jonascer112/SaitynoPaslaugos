@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<order>
+    <customers>
+        <firstName>David</firstName>
+        <id>0</id>
+        <lastName>Guodis</lastName>
+    </customers>
+    <date>2023-05-24</date>
+    <id>0</id>
+</order>

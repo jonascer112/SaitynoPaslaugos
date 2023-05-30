@@ -1,0 +1,8 @@
+order [
+        <!ELEMENT order (customers|date|id)*>
+        <!ELEMENT customers (firstName|id|lastName)*>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+        <!ELEMENT date (#PCDATA)>
+        ]

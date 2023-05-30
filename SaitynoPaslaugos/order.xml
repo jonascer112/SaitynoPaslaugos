@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<order>
+    <customers>
+        <firstName>Antanas</firstName>
+        <id>0</id>
+        <lastName>Antanavicius</lastName>
+    </customers>
+    <customers>
+        <firstName>Deividas</firstName>
+        <id>0</id>
+        <lastName>Vilnietis</lastName>
+    </customers>
+    <date>2023-05-27</date>
+    <id>0</id>
+</order>

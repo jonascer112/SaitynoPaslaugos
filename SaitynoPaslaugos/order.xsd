@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org"
+            elementFormDefault="qualified">
+
+    <xsd:element name="order" type="OrderType"/>
+
+    <xsd:complexType name="OrderType">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:int"/>
+            <xsd:element name="date" type="xsd:string"/>
+            <xsd:element name="customers" type="CustomerListType"/>
+            <xsd:element name="computers" type="ComputerListType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CustomerType">
+        <xsd:sequence>
+            <xsd:element name="firstName" type="xsd:string"/>
+            <xsd:element name="lastName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CustomerListType">
+        <xsd:sequence>
+            <xsd:element name="customer" type="CustomerType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ComputerType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="cpu" type="xsd:string"/>
+            <xsd:element name="ram" type="xsd:int"/>
+            <xsd:element name="gpu" type="xsd:string"/>
+            <xsd:element name="talpa" type="xsd:double"/>
+            <xsd:element name="kaina" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ComputerListType">
+        <xsd:sequence>
+            <xsd:element name="computer" type="ComputerType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
